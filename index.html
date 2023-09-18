@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Protfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Noorulain</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img  data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" src="https://dthezntil550i.cloudfront.net/zj/latest/zj1905271346020760005720214/1d16d50a-a3be-4dcf-b01f-0a2d843b96e8.png" alt="Profile" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Noorulain</h1>
+        <p class="section__text__p2">Mern Stack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./cv/noorulainshoaib-github-io-Cv-.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1000">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0N_dV0wd4UP3DvzyFk4UpG9RlCTAofLLnahRYUQCmd-qt-2NLQTBpLBDH7SMMhKAxxKY&usqp=CAU"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdGykHec54Yqq3yT1BKIGS2W7qXzhOO5gQvfpunO51ELTbF8NTOXn9gMI-GaMmN3NxCao&usqp=CAU"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1 month <br />Web Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtNTM1LWJvb2syLTA2LXhfMS5qcGc.jpg"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Matric<br />Intermediate<br />Mern Stack Course</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlj9GaDBFkT3Kz_hYG3kyzUT2gvg8FMgLQrrEbero7GpKHz3q6cQ3lBNck8vhNthdJCIs&usqp=CAU"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1000">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAmVBMVEX///+VAOWRAOSvWuuWAOWMAOP25/3+/P+6cO68b+7Ae++zWuz++v/iwvjm0PikOuivY+vhyPfTrfPYrfX89f7x3/zVqPTRo/OYFOb68/768P6iKeipTeqgIujPnfOgMOixU+zs1vrIj/HHifH05fzu3PvctfayX+zFhPDcuvbLnfHbsvanQunBfu/ixPe4aO3NlvKiPei/du+vbBgvAAAJxklEQVR4nO2d6XqqMBCGIYJL3Wqt1l3ctbXV4/1f3AEhFcmMRGAi9cn7p4po+CqELzOTaBgajUaj0Wg0Go1Go9FoNBpNniktXgL4lor/9DRxH7dOLyAL97VZOXhyCn0a37/ccZ+tgj1OLeWyQtSmzMfiW+xgw8Z93OVPIkzd1+r8NXvx+2nb320N91kreGa/qdd1odZk5pmLQv+5+eo+7gYvRmBN97X672tsGbx19bvJVxg8ZX9fYSF4q/OsCk22O79zbf9ueTaFZu/d+yjrsuHpFLKtu+EltOHpFJr20phdPc+lwpKPjMJpVKG5N/bhp3lUaI4D+EF6CvurjsfS4dJaHR9BIatePc2lwiivob02/FiLl2117I1aoWK0Qp+bCkO3wd/HT6WQTS6f0DuyJ1Roz7gs0/5pP6XCljH1H7KD8ZFnhcOABAob/kOriCjs1t4vPEwh9zRXrk1SobH1HttdA1Zo9i5YjmKBMb6UE6ewNmYmGxmYwhDnvZSSjUKjZfuvPa9C42B/en+eWGHfOW98YoUBWuEjFN6Ml3KqPAwaVsijoVcKbSBeeoVyhaVyNYBvGflPnUVor4UTbBxctjWCHUez0I67YMfRyn0yG1VFXgyNRqPRaDQajebM2inkA2dNpLBri6Oah+DFrkhY38o4qIRRfYet3HyHVKVEndwo7BAprOVGYY1IoZGb65BKoNF7tLSAHplCNN+klnPRCg2bnCjcxB9qQrY5UbglUzjPicI5mcJJThROyBR+5UQhlWnLjW07h/5pWOZEYTH+UBMyyMlZOog/1IT0rfjmFWDRKXwfxjevgClh5ckoD6cpaSrx9dHqPNhr/IEmppyL77BMqDAXxpTQlubEthGatpxE24KZNjQ0cqGQzrQZ17M/HgWbxR9oYjqPVneGKpboMUBiURYNcGM9OtNmGDXYtrFdkYIdfE0MS4QKjSas8IekMXhmBmGkzWMPN0rTf8PfIXGFGxxPZB8kjX3AjR1IGuN8w43S+CiksW+SxjiwbSP6tyInzCdJYxyll4bSi56DTDybkjQ2BdtidZLGOIgxHVK0VRqDbZHaUte2wQpJbAZioH5XYqABSwNTWEXEBNMlgH2QSdoUdh8ZyNAlgH1gN0xybSDXPF0C2AdOA5P04HBAgdiWondhitAJ4i7oEsA+cLSNxLYhpm0R/85UfMLNVgiagoOzxKYNW/FCDEOXXirldJyQ0TZV1R5H2pju4ZWi7gAUSG1L3S4cvuWL6aADUViOMAHsU4QVirbthUohZRzKo4QcuJB4XhApZKRxKON6Uafwf1ZQSJXisKgVluAeTrw6iFIcjDaW6AGngcUSF6RLSq2Qfi5pRdK2ISPJ1Aop06M+iJcSSs2WJAKpI20ecB8pGlMsxZFWIV3VHgcJ0wq27R2OI6VWSBN8DoPYtr2wI01lCrlpM4wZ3EeOhR0LFAJNmzI96rNEvhphRxpjShxp8ygipka4EcOdblosurpEDtJH2sL/lsa2kSaAfWpwHylORVrbqUD+P03iaKmHrG3ja2ImA4u0qVgApAA3nXVwAQmXUEfaPBBjmnWASGHIKwoST8zaLz4oluiB2LZq/DvvoqrmYoBQVAOCpA9o6lqugVZxMrNPmCDJQ+pImwdWvZdxM3AjpFV7HCRxmfEkCGxqB70tRSddsGzTwCvkWlCyBKaSKwRJj4qDNAqQjEm2vdwP3JXSlLVE2UNtZz1lDgm3qlmXDh7asmOmjRwfZ9pQ25btonhwYkeJaVPk+pF6ATVrJysZuUmPQimoIynEciUx4sn3D1Roq7ClaDzRTJHQFs5wZKajgliiB5IGToHYgWARPfo41JnsFQp3GqxqT41AxPanUSiMaxFbakGHQwBc2ZpGoZCMgGf+MzW2FKu/ToHYgbQfadrQjIRszQ+gUOhAENNGnwD2gZc4Yc5X+5oPWYWmoFA200wE8g8+RferyaaBxXEtUrVHOT82DPJ7VcJtG/+Vj8iBT4VkxAbesa1GIJoGFhJsjqRCJ/rGEtyZ2bRTLS5gaWDJc01UKHQg7/ANyV6pEWgMYIVWP7rjSVKhcAUj0S5Vps3oIwcqKJSs3hNtaR+xNEILRLwjaWAhnginOESFQgUJskKjmliiSwnuI8XB280fIAspFDqQH9i0/SOv2uPAfST7iu4nOX1fDNUjS24VovuRIXs/RkYIwhuFLhKZaqHKtKGBMLF6T27VJUtIRiCuib5qj4MYUyGeKFm9N5YsEs84JHsLpI90hB3lqvfEUL0D7qfMtKFpYHEm6d6OHUIxZoujviHcWav7JXL5GMOyXbVuDBQZ623aQEoQSeCpMm2oQiRO1Dg6lvhdut+d5RyRlJzCmaowWKwPtRzFn20zLNKV19z+oC6zjxhf+qo9ziCJ9R+0D+a5Wo3ZZvnrpodeIYMXVbbUwJY4iY+5zz5HvdFHbOAaNm0m9ezRMClWO5CpLXxg1R4HKVjKKvf1pqbs6hZI9V5WngPxTMJAmRBk0kVWh0D8D5QBSQM7GX08YtqE0RkhxNV7U/jjVUXaPJDqvawSJ8iiJupsKTp4z6o+Eam6UmdLXReGeOnNW3rr2HmDA96UCySLYLOB3WHEcJvmcqlvh/g89cwOX4Yb4Qlm26NJ5/5pEbXVZIROs/BQlQD2gYeoIZXD0+6ekcBydxrfUmcqq9rjjG4ezPmAmLWfy/V+rfnejE+nZna3lQN2HYJIZlbbt7/KYrdqymWLlZq2O37pwh3rDrGx7qC+HccHcn4/SVV61AdJkmIircIkMigszY4FK+bKi3yMiqkWF+7+pQvGxpUd/yoH68NYvo6Bf4Kaqj0OUr0XI9IeHhu11vyOUzOEwliiB1a9Fy+SJZJnEv4UGQwSDaOEeiW6KEQrl9xArWm7aduIoF6JLgo8SCWEfCW6KHCggVKhivmxYaiWgcIVqkuP+lAtA4UrVFW1x4Hz0JQK1dpStMSVUKHKWKIHkjyhQ7Fpe8DvyooLbxCDRdvIYOrSoz6DhP45sUCxUpqY0u4wVCaSseFhp6ym7ULNHaabdw3TE6mzzcJxpnhcEaJf3wJ1FpmpY3ZvW1eYvUdYdp1bNTOJ1TGrCtXaPIZaayET8rxDnjlatB53asIU16deFiesd2qe1qrvDZKUZhOJSrYYefvJ6gHd5h3U6i/TZFel+67pdz1vpybMqvt65wnrnZqHttpoWkr6jXlTVqQr79+88fibwv0M1hVLor7UKq//ojpOY4LfLN3tPedTzfRsUoo/38AJ68prbluq7TQZpWJ3Ewrne8H9Q7uY75tCAlrzpj+T1mxitcF/n+Wu8q98V4L/D/J0p6ZGo9FoNH+B/y5HvV85JjE7AAAAAElFTkSuQmCC"
+                  alt="html icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="data:image/png;base64,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"
+                  alt="css icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="data:image/png;base64,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"
+                  alt="javascript icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://camo.githubusercontent.com/2512b49c89512f2ff3718f7257f48ed5c46a4e331abbd890b6c5e8c0e458434f/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67"
+                  alt="Bootstrap5 icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap 5</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://static-00.iconduck.com/assets.00/node-js-icon-227x256-913nazt0.png"
+                  alt="Node js icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node Js</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://www.pngitem.com/pimgs/m/616-6169316_react-react-js-icon-white-hd-png-download.png"
+                  alt="React js icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React Js</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://static-00.iconduck.com/assets.00/node-js-icon-227x256-913nazt0.png"
+                  alt="Node js icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node Js</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR49CPLVKPAe1cslXaHnF20_Qwt-MiSoRen-vvYNoCmLkKwCQ1GtWdstwiUeDJ03RYu5ik&usqp=CAU"
+                  alt="Express Js icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn.iconscout.com/icon/free/png-256/free-mongodb-3772329-3151455.png"
+                  alt="MongoDB icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+               
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/8025/8025069.png"
+                  alt="git icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlj9GaDBFkT3Kz_hYG3kyzUT2gvg8FMgLQrrEbero7GpKHz3q6cQ3lBNck8vhNthdJCIs&usqp=CAU"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1" >Browse My Recent</p>
+      <h1  class="title" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1000">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container" >
+            <div class="article-container">
+              <img
+                src="data:image/png;base64,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"
+                alt="Project 1-calculator"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One Calculator</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Noorulainshoaib/Js-calculator'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://noorulainshoaib.github.io/Js-calculator/'";
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container"   >
+              <img
+                src="https://i.pinimg.com/736x/ef/55/94/ef55941cbbd79295d10e13171fc83d79--app-icon-rounding.jpg"
+                alt="TO DO APP"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two <br/>ToDo App</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Noorulainshoaib/Todo.app'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='http://localhost:5173/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="data:image/png;base64,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"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three <br/> Landing page</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Noorulainshoaib/LandingPage'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://noorulainshoaib.github.io/LandingPage/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlj9GaDBFkT3Kz_hYG3kyzUT2gvg8FMgLQrrEbero7GpKHz3q6cQ3lBNck8vhNthdJCIs&usqp=CAU"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1000">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/7916033/email-icon-md.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/noor-ul-ain-5b7261267/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Noorulain All Rights Reserved.</p>
+    </footer>
+   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+        <script src="index.js"></script>
+  </body>
+</html>
